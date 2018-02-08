@@ -1,4 +1,4 @@
-{% set version = '0.9.1' %}
+{% set version = '0.9.2' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/cowplot_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/cowplot/cowplot_{{ version }}.tar.gz
-  sha256: 953fd9d6ff370472b9f5a9ee867a423bea3e26e406d08a2192ec1872a2e60047
+  sha256: 8b92ce7f92937fde06b0cfb86c7634a39b3b2101e362cc55c4bec6b3fde1d28f
 
 build:
   number: 0
