@@ -14,9 +14,9 @@ source:
   sha256: 3e10475fd7506ea9297ed72eb1a3acf858c6fa99d26e46fc39654eba000c3dcb
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,8 +51,7 @@ about:
     The package also provides a streamlined and clean theme that is used in the Wilke
     lab, hence the package name, which stands for Claus O. Wilke's plot package.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
