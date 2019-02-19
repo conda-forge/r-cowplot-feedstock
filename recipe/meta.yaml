@@ -1,4 +1,4 @@
-{% set version = '0.9.3' %}
+{% set version = "0.9.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cowplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cowplot/cowplot_{{ version }}.tar.gz
-  sha256: 3e10475fd7506ea9297ed72eb1a3acf858c6fa99d26e46fc39654eba000c3dcb
+  sha256: fb57091f4d089797bafa4aeb71371390761bcc40de180c26f6adf94d15a76a7b
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
