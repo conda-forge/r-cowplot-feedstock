@@ -14,9 +14,9 @@ source:
   sha256: 30b941bd6b6d86d614489b18f42c01e8053c6e2d2b9caa167bd0a6d8c9bba511
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -26,15 +26,15 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-ggplot2 >=2.1.0
-    - r-gtable >=0.1.2
-    - r-plyr >=1.8.2
+    - r-ggplot2 >2.2.1
+    - r-gtable
+    - r-rlang
     - r-scales
   run:
     - r-base
-    - r-ggplot2 >=2.1.0
-    - r-gtable >=0.1.2
-    - r-plyr >=1.8.2
+    - r-ggplot2 >2.2.1
+    - r-gtable
+    - r-rlang
     - r-scales
 
 test:
@@ -44,19 +44,14 @@ test:
 
 about:
   home: https://github.com/wilkelab/cowplot
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Some helpful extensions and modifications to the 'ggplot2' package. In particular, this package makes it easy to combine multiple 'ggplot2' plots into one and label them with letters, e.g. A, B, C, etc., as is often required for scientific publications. The package also provides a streamlined and clean theme that
     is used in the Wilke lab, hence the package name, which stands for Claus O. Wilke's plot package.
   license_family: GPL2
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
     - conda-forge/r
     - druvus
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
