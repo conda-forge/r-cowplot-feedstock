@@ -5,11 +5,9 @@ Home: https://github.com/wilkelab/cowplot
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cowplot-feedstock/blob/master/LICENSE.txt)
 
 Summary: Some helpful extensions and modifications to the 'ggplot2' package. In particular, this package makes it easy to combine multiple 'ggplot2' plots into one and label them with letters, e.g. A, B, C, etc., as is often required for scientific publications. The package also provides a streamlined and clean theme that is used in the Wilke lab, hence the package name, which stands for Claus O. Wilke's plot package.
-
-
 
 Current build status
 ====================

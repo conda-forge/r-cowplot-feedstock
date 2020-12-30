@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cowplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cowplot/cowplot_{{ version }}.tar.gz
-  sha256: 30b941bd6b6d86d614489b18f42c01e8053c6e2d2b9caa167bd0a6d8c9bba511
+  sha256: c7dce625b456dffc59ba100c816e16226048d12fdd29a7335dc1f6f6e12eed48
 
 build:
   merge_build_host: true  # [win]
