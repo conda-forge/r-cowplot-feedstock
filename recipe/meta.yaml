@@ -13,7 +13,7 @@ source:
   sha256: 431d582a4fb68f005f45e0d963c19daad826289374b429b05fe168ef6f231aa1
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -24,13 +24,13 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-ggplot2 >2.2.1
+    - r-ggplot2 >=3.5.2
     - r-gtable
     - r-rlang
     - r-scales
   run:
     - r-base
-    - r-ggplot2 >2.2.1
+    - r-ggplot2 >=3.5.2
     - r-gtable
     - r-rlang
     - r-scales
