@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@druvus](https://github.com/druvus/)
 
-
-<!-- dummy commit to enable rerendering -->
-
